@@ -13,7 +13,7 @@ const Index = () => {
         {/* Welcome Section */}
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold tracking-tight">Welcome back, Sarah</h1>
+            <h1 className="text-3xl font-bold tracking-tight">Welcome back, Prateek</h1>
             <p className="text-muted-foreground">
               Here's what's happening with your AI voice agents today.
             </p>

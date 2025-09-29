@@ -31,7 +31,7 @@ export function DashboardHeader() {
           Create Agent
         </Button>
 
-        <div className="relative">
+        {/* <div className="relative">
           <Button variant="ghost" size="icon">
             <Bell className="h-4 w-4" />
           </Button>
@@ -41,7 +41,7 @@ export function DashboardHeader() {
           >
             3
           </Badge>
-        </div>
+        </div> */}
 
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
@@ -50,7 +50,7 @@ export function DashboardHeader() {
                 <User className="h-4 w-4 text-white" />
               </div>
               <div className="hidden text-left lg:block">
-                <p className="text-sm font-medium">Sarah Wilson</p>
+                <p className="text-sm font-medium">Prateek Jadia</p>
                 <p className="text-xs text-muted-foreground">Admin</p>
               </div>
               <ChevronDown className="h-4 w-4" />

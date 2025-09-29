@@ -43,17 +43,21 @@ export function QuickActionsCard() {
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-2 gap-3">
+        {/* ✅ Grid respects card width */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
           {quickActions.map((action) => (
             <Button
               key={action.action}
               variant={action.gradient ? "gradient" : "outline"}
-              className="h-auto flex-col items-start gap-2 p-4"
+              className="h-auto w-full flex flex-col items-start gap-2 p-4 text-left whitespace-normal"
             >
-              <action.icon className="h-5 w-5" />
-              <div className="text-left">
+              <action.icon className="h-5 w-5 shrink-0" />
+              <div className="w-full">
                 <div className="font-medium">{action.title}</div>
-                <div className="text-xs opacity-80">{action.description}</div>
+                {/* ✅ Allow wrapping */}
+                <div className="text-xs opacity-80 break-words">
+                  {action.description}
+                </div>
               </div>
             </Button>
           ))}
@@ -62,3 +66,4 @@ export function QuickActionsCard() {
     </Card>
   );
 }
+
