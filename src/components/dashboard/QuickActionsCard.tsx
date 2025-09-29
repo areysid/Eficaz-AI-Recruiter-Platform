@@ -4,10 +4,10 @@ import { Plus, Phone, Calendar, Upload, Zap } from "lucide-react";
 
 const quickActions = [
   {
-    title: "Create Agent",
-    description: "Build a new AI voice agent",
+    title: "Knowledge Base",
+    description: "Upload your knowledge base",
     icon: Plus,
-    action: "create-agent",
+    action: "knowledge-base",
     gradient: true
   },
   {
